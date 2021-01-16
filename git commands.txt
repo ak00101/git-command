@@ -1,0 +1,37 @@
+
+1.git reset HEAD~2 -> undo last two commits ,keep changes
+
+2.git reset --hard HEAD~2 -> undo last two commits,discard changes
+
+3.Revert pushed commit
+git revert c761f5c- reverts the commit with the specified id
+git revert HEAD^ - reverts the second to last commit
+
+4.git config --global rerere.enabled true -> to avoid repeated erge conflicts
+
+5.clone project
+git add .
+git commit -m "message"
+git pull
+git push- command to commit the changes into git
+
+
+6 git reflog -> record when the tips of branches and other references were updated in the local repository.
+
+7.git branch-> list out the branches
+
+8.git checkout -> switch to another branch
+
+9.git branch -d mybranch-> to delete the branch use
+
+git checkout -b mybranch->Create a new branch named "mybranch" and switch to it.
+
+git log --name-status ->to see only which files have changed.
+
+git log -> shows all the commit in the current working history
+
+git status ->shows modified files in working directory
+
+git log branchB..branchA
+show the commit on branchA that are not on branchB
+
